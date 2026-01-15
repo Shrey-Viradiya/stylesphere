@@ -2,6 +2,8 @@
 
 **StyleSphere** is a modern, reader-friendly fashion blog starter built with **Astro v5**, **Tailwind CSS v4**, and optimized for SEO and responsiveness across all devices. Perfect for fashion blogs and content-focused websites.
 
+<!-- Dummy commit to trigger deployment -->
+
 ## Features
 
 - [x] Modern & minimalist design with responsive layout
