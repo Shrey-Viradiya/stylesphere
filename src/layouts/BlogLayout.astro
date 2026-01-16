@@ -10,7 +10,7 @@ const { frontmatter, readTime } = Astro.props;
   title={frontmatter.title}
   description={frontmatter.description}
   author={frontmatter.author}
-  url={`https://ryze.pages.dev/${frontmatter.slug}`}
+  url={new URL(`/blog/${frontmatter.slug}`, Astro.site).toString()}
   pubDate={frontmatter.date}
 >
   <ProgressBar client:idle />

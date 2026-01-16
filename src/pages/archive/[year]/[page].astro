@@ -60,7 +60,7 @@ const { year } = Astro.params as { year: string };
                     month: "short",
                   })
                   .slice(0, 11)}
-                url={`/${blog.data.slug}`}
+                url={`/blog/${blog.data.slug}`}
                 tags={blog.data.tags}
               />
             </li>
