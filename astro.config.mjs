@@ -34,5 +34,4 @@ export default defineConfig({
   },
 
   output: "static",
-  site: "https://ryze.pages.dev",
 });
