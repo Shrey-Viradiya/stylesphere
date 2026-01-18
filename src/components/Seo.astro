@@ -41,7 +41,7 @@ const {
   )
 }
 
-<link rel="sitemap" href={`${import.meta.env.BASE_URL}sitemap-index.xml`} />
+<link rel="sitemap" href={new URL('sitemap-index.xml', Astro.site).toString()} />
 
 <link
   rel="alternate"

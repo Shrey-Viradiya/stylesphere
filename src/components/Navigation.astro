@@ -8,42 +8,42 @@
 
 <nav class="flex items-center justify-center gap-4">
   <a
-    href={`${import.meta.env.BASE_URL}archive/1`}
+    href={new URL('archive/1', Astro.site).toString()}
     class:list={[
       "navigation animation",
       Astro.url.pathname.startsWith(`${import.meta.env.BASE_URL}archive`) ? "text-accent" : "",
     ]}>archive</a
   >
   <a
-    href={`${import.meta.env.BASE_URL}tags`}
+    href={new URL('tags', Astro.site).toString()}
     class:list={[
       "navigation animation",
       Astro.url.pathname.startsWith(`${import.meta.env.BASE_URL}tags`) ? "text-accent" : "",
     ]}>tags</a
   >
   <a
-    href={`${import.meta.env.BASE_URL}about`}
+    href={new URL('about', Astro.site).toString()}
     class:list={[
       "navigation animation",
       Astro.url.pathname === `${import.meta.env.BASE_URL}about` ? "text-accent" : "",
     ]}>about</a
   >
   <a
-    href={`${import.meta.env.BASE_URL}contact`}
+    href={new URL('contact', Astro.site).toString()}
     class:list={[
       "navigation animation",
       Astro.url.pathname === `${import.meta.env.BASE_URL}contact` ? "text-accent" : "",
     ]}>contact</a
   >
   <a
-    href={`${import.meta.env.BASE_URL}privacy-policy`}
+    href={new URL('privacy-policy', Astro.site).toString()}
     class:list={[
       "navigation animation",
       Astro.url.pathname === `${import.meta.env.BASE_URL}privacy-policy` ? "text-accent" : "",
     ]}>privacy</a
   >
   <a
-    href={`${import.meta.env.BASE_URL}terms-and-conditions`}
+    href={new URL('terms-and-conditions', Astro.site).toString()}
     class:list={[
       "navigation animation",
       Astro.url.pathname === `${import.meta.env.BASE_URL}terms-and-conditions` ? "text-accent" : "",
