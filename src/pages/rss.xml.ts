@@ -12,9 +12,9 @@ export async function GET(context: APIContext) {
 
   const blogs: BlogType[] = await getCollection("blogs");
   return rss({
-    // stylesheet: "/pretty-feed-v3.xsl",
-    title: "Ryze",
-    description: "Static minimal astro blog starter",
+    stylesheet: "/pretty-feed-v3.xsl",
+    title: "StyleSphere - Fashion Trends & Beauty Tips",
+    description: "Your ultimate fashion destination featuring the latest trends, style inspiration, and beauty tips. Stay ahead of the curve with curated content for fashion enthusiasts.",
     site: context.site,
     trailingSlash: false,
     items: blogs.map((blog: BlogType) => ({
@@ -23,6 +23,10 @@ export async function GET(context: APIContext) {
       pubDate: blog.data.date,
       author: blog.data.author,
       link: `/${blog.data.slug}`,
+      categories: blog.data.tags,
     })),
+    language: "en-us",
+    managingEditor: "contact@stylesphere.com",
+    webMaster: "contact@stylesphere.com",
   });
 }
