@@ -2,47 +2,51 @@
 
 ---
 
+---
+
+---
+
 <nav class="flex items-center justify-center gap-4">
   <a
-    href="/archive/1"
+    href={`${import.meta.env.BASE_URL}archive/1`}
     class:list={[
       "navigation animation",
-      Astro.url.pathname.startsWith("/archive") ? "text-accent" : "",
+      Astro.url.pathname.startsWith(`${import.meta.env.BASE_URL}archive`) ? "text-accent" : "",
     ]}>archive</a
   >
   <a
-    href="/tags"
+    href={`${import.meta.env.BASE_URL}tags`}
     class:list={[
       "navigation animation",
-      Astro.url.pathname.startsWith("/tags") ? "text-accent" : "",
+      Astro.url.pathname.startsWith(`${import.meta.env.BASE_URL}tags`) ? "text-accent" : "",
     ]}>tags</a
   >
   <a
-    href="/about"
+    href={`${import.meta.env.BASE_URL}about`}
     class:list={[
       "navigation animation",
-      Astro.url.pathname === "/about" ? "text-accent" : "",
+      Astro.url.pathname === `${import.meta.env.BASE_URL}about` ? "text-accent" : "",
     ]}>about</a
   >
   <a
-    href="/contact"
+    href={`${import.meta.env.BASE_URL}contact`}
     class:list={[
       "navigation animation",
-      Astro.url.pathname === "/contact" ? "text-accent" : "",
+      Astro.url.pathname === `${import.meta.env.BASE_URL}contact` ? "text-accent" : "",
     ]}>contact</a
   >
   <a
-    href="/privacy-policy"
+    href={`${import.meta.env.BASE_URL}privacy-policy`}
     class:list={[
       "navigation animation",
-      Astro.url.pathname === "/privacy-policy" ? "text-accent" : "",
+      Astro.url.pathname === `${import.meta.env.BASE_URL}privacy-policy` ? "text-accent" : "",
     ]}>privacy</a
   >
   <a
-    href="/terms-and-conditions"
+    href={`${import.meta.env.BASE_URL}terms-and-conditions`}
     class:list={[
       "navigation animation",
-      Astro.url.pathname === "/terms-and-conditions" ? "text-accent" : "",
+      Astro.url.pathname === `${import.meta.env.BASE_URL}terms-and-conditions` ? "text-accent" : "",
     ]}>terms</a
   >
 </nav>

@@ -8,14 +8,14 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://stylesphere.com",
-  base: '/stylesphere/',
+  base: 'stylesphere/',
   vite: {
     plugins: [tailwindcss(), vitePluginSvgr({})],
   },
   devToolbar: {
     enabled: false,
   },
-  integrations: [react(), sitemap()],
+  integrations: [react()],
 
   markdown: {
     shikiConfig: {
