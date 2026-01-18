@@ -8,45 +8,45 @@
 
 <nav class="flex items-center justify-center gap-4">
   <a
-    href={`${import.meta.env.BASE_URL}archive/1`}
+    href="/stylesphere/archive/1"
     class:list={[
       "navigation animation",
-      Astro.url.pathname.startsWith(`${import.meta.env.BASE_URL}archive`) ? "text-accent" : "",
+      Astro.url.pathname.startsWith("/stylesphere/archive") ? "text-accent" : "",
     ]}>archive</a
   >
   <a
-    href={`${import.meta.env.BASE_URL}tags`}
+    href="/stylesphere/tags"
     class:list={[
       "navigation animation",
-      Astro.url.pathname.startsWith(`${import.meta.env.BASE_URL}tags`) ? "text-accent" : "",
+      Astro.url.pathname.startsWith("/stylesphere/tags") ? "text-accent" : "",
     ]}>tags</a
   >
   <a
-    href={`${import.meta.env.BASE_URL}about`}
+    href="/stylesphere/about"
     class:list={[
       "navigation animation",
-      Astro.url.pathname === `${import.meta.env.BASE_URL}about` ? "text-accent" : "",
+      Astro.url.pathname === "/stylesphere/about" ? "text-accent" : "",
     ]}>about</a
   >
   <a
-    href={`${import.meta.env.BASE_URL}contact`}
+    href="/stylesphere/contact"
     class:list={[
       "navigation animation",
-      Astro.url.pathname === `${import.meta.env.BASE_URL}contact` ? "text-accent" : "",
+      Astro.url.pathname === "/stylesphere/contact" ? "text-accent" : "",
     ]}>contact</a
   >
   <a
-    href={`${import.meta.env.BASE_URL}privacy-policy`}
+    href="/stylesphere/privacy-policy"
     class:list={[
       "navigation animation",
-      Astro.url.pathname === `${import.meta.env.BASE_URL}privacy-policy` ? "text-accent" : "",
+      Astro.url.pathname === "/stylesphere/privacy-policy" ? "text-accent" : "",
     ]}>privacy</a
   >
   <a
-    href={`${import.meta.env.BASE_URL}terms-and-conditions`}
+    href="/stylesphere/terms-and-conditions"
     class:list={[
       "navigation animation",
-      Astro.url.pathname === `${import.meta.env.BASE_URL}terms-and-conditions` ? "text-accent" : "",
+      Astro.url.pathname === "/stylesphere/terms-and-conditions" ? "text-accent" : "",
     ]}>terms</a
   >
 </nav>
