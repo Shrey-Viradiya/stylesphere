@@ -34,7 +34,7 @@ const { page } = Astro.props as { page: { data: BlogType[] } };
 >
   <div class="center">
     <div class="flex items-center gap-8">
-      <a href={new URL('archive/1', Astro.site).toString()} class="heading">Archive</a>
+      <a href={`${import.meta.env.BASE_URL}archive/1`} class="heading">Archive</a>
       <Year years={years} />
     </div>
     <ul class="my-3 space-y-3">
@@ -49,7 +49,7 @@ const { page } = Astro.props as { page: { data: BlogType[] } };
                   month: "short",
                 })
                 .slice(0, 11)}
-              url={new URL(blog.data.slug, Astro.site).toString()}
+              url={`${import.meta.env.BASE_URL}${blog.data.slug}`}
               tags={blog.data.tags}
             />
           </li>

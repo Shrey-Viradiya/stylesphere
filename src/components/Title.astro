@@ -42,7 +42,7 @@ import IconEdit from "../assets/icons/edit.svg";
         {
           frontmatter.tags.map((tag: string) => (
             <a
-              href={new URL(`tags/${tag}/1`, Astro.site).toString()}
+              href={`${import.meta.env.BASE_URL}tags/${tag}/1`}
               class="hover:text-accent text-base opacity-90"
             >
               {tag}
