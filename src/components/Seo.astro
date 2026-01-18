@@ -9,9 +9,9 @@ export interface Props {
 }
 
 const {
-  title = "Ryze",
+  title = "StyleSphere",
   description = "A minimalist Astro starter for mini blogs.",
-  author = "Rahul",
+  author = "StyleSphere Team",
   canonicalURL = new URL(Astro.url.pathname, Astro.url),
   pubDate,
 } = Astro.props;
@@ -28,7 +28,7 @@ const {
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="Ryze" />
+<meta property="og:site_name" content="StyleSphere" />
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={canonicalURL} />
@@ -46,7 +46,7 @@ const {
 <link
   rel="alternate"
   type="application/rss+xml"
-  title="Ryze"
+  title="StyleSphere"
   href={new URL("rss.xml", Astro.site)}
 />
 

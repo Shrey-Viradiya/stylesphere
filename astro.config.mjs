@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://stylesphere.com",
+  site: "https://shrey-viradiya.github.io",
   base: '/stylesphere/',
   vite: {
     plugins: [tailwindcss(), vitePluginSvgr({})],
