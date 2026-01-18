@@ -12,7 +12,7 @@ export async function GET(context: APIContext) {
 
   const blogs: BlogType[] = await getCollection("blogs");
   return rss({
-    stylesheet: "/pretty-feed-v3.xsl",
+    stylesheet: new URL("pretty-feed-v3.xsl", context.site).toString(),
     title: "StyleSphere - Fashion Trends & Beauty Tips",
     description: "Your ultimate fashion destination featuring the latest trends, style inspiration, and beauty tips. Stay ahead of the curve with curated content for fashion enthusiasts.",
     site: context.site,
