@@ -140,10 +140,10 @@ Each blog post must include:
    - Integrate Instagram feed
    - Add social media links
 
-5. **Newsletter Enhancement**
-   - Connect to email service (Mailchimp, etc.)
-   - Add subscription confirmation
-   - Segment subscribers by interests
+5. **Newsletter Enhancement (DEFERRED)**
+   - Subscription form removed from homepage (static GitHub Pages cannot host confirmation flows reliably)
+   - Plan: Integrate with external email provider (Mailchimp/ConvertKit) and implement double opt-in when ready
+   - Status: Deferred until external provider integration is planned
 
 ### Medium-term Goals:
 - **Analytics Integration:** Google Analytics 4
@@ -164,15 +164,21 @@ Each blog post must include:
 
 ---
 
+### Recent Completed Tasks
+- Fixed RSS feed generation and restored canonical XSL stylesheet (feed now renders and styles correctly in browsers).
+- Resolved XSL parsing and stylesheet issues; verified correct HTTP headers and CORS behavior for RSS and XSL files.
+- Fixed navigation and base path handling for GitHub Pages (all internal links now use `/stylesphere/` base path).
+- Removed newsletter subscription form from the homepage and committed the change (deferred until external integration).
+
 ## 📊 Progress Tracking
 - ✅ Project Setup: 100%
 - ✅ Basic Site Structure: 100%
 - ✅ Deployment: 100%
-- 🔄 Content Creation: 10% (1/10 posts)
+- 🔄 Content Creation: 60% (6/10 posts)
 - ⏳ Monetization: 50% (structure ready)
 - ⏳ Advanced Features: 0%
 
-**Last Updated:** January 15, 2026
+**Last Updated:** January 19, 2026
 Verify working HTTPS
 11. Post-Launch Checklist
 Add 10–15 fashion blog posts
