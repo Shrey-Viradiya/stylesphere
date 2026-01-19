@@ -4,6 +4,9 @@ import type { BlogType } from "../content.config";
 import type { APIContext } from "astro";
 
 export async function GET(context: APIContext) {
+  console.log('Context site:', context.site);
+  console.log('Context url:', context.url);
+
   if (!context.site) {
     return new Response("Site is not defined on the request context", {
       status: 500,
@@ -11,6 +14,7 @@ export async function GET(context: APIContext) {
   }
 
   const blogs: BlogType[] = await getCollection("blogs");
+  console.log('Number of blogs found:', blogs.length);
   return rss({
     stylesheet: new URL("stylesphere/pretty-feed-v3.xsl", context.site).toString(),
     title: "StyleSphere - Fashion Trends & Beauty Tips",
@@ -22,7 +26,7 @@ export async function GET(context: APIContext) {
       description: blog.data.description,
       pubDate: blog.data.date,
       author: blog.data.author,
-      link: `/${blog.data.slug}`,
+      link: `/stylesphere/${blog.data.slug}`,
       categories: blog.data.tags,
     })),
     language: "en-us",
