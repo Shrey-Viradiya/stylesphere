@@ -27,3 +27,5 @@ Choose a color palette and stick to a mix of textures. Accessories like scarves 
 
 ## Maintenance & Mindful Shopping
 Invest in repairs, learn basic alterations, and replace only when necessary. Aim for pieces that become better with time.
+
+Stay Awesome
